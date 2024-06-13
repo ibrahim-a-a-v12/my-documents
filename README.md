@@ -1,4 +1,4 @@
-## feature/: Used for new features and enhancements.
+### feature/: Used for new features and enhancements.
   * Example: feature/new-login-page
 
 fix/: Used for bug fixes.
