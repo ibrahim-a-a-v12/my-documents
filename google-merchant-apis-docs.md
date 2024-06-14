@@ -89,3 +89,22 @@
       }
     }
     ```
+
+### Get Vehicles selected by the dealer
+- **URL**: `api/export/custom-vehicles-exported/{classifield_id}`
+- **Method**: GET
+- **Headers**: 
+  - `Authorization`: `Bearer <token>`
+- **Responses**:
+  - **200 OK**:
+    ```json
+    {
+      "code": 200,
+      "success": [
+        31662,
+        31844,
+        31845,
+        ...
+      ]
+    }
+    ```
