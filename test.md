@@ -8,7 +8,6 @@
 - **Method**: POST
 - **Headers**: 
   - `Authorization`: `Bearer <token>`
-- **Parameters**:
 - **Responses**:
   - **200 OK**:
     ```json
@@ -18,3 +17,38 @@
     }
     ```
 
+### Get google merchant feed setup
+- **URL**: `api/export/get-google-merchant-classifield-setup`
+- **Method**: GET
+- **Headers**: 
+  - `Authorization`: `Bearer <token>`
+- **Responses**:
+  - **200 OK**:
+    ```json
+    response 1
+    {
+      "code": 200,
+      "success": {
+        "classifield_id": 1098
+      }
+    }
+    response 2
+    {
+      "code": 200,
+      "success": null
+    }
+    ```
+
+### Delete google merchamt feed
+- **URL**: `api/export/get-google-merchant-classifield-setup`
+- **Method**: DELETE
+- **Headers**: 
+  - `Authorization`: `Bearer <token>`
+- **Responses**:
+  - **200 OK**:
+    ```json
+    {
+      "code": 200,
+      "success": "Your Google merchant feed has been deleted successfully."
+    }
+    ```
