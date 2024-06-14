@@ -17,6 +17,7 @@
     }
     ```
 
+
 ### Get google merchant feed setup
 - **URL**: `api/export/get-google-merchant-classifield-setup`
 - **Method**: GET
@@ -39,6 +40,7 @@
     }
     ```
 
+
 ### Delete google merchamt feed
 - **URL**: `api/export/get-google-merchant-classifield-setup`
 - **Method**: DELETE
@@ -52,6 +54,7 @@
       "success": "Your Google merchant feed has been deleted successfully."
     }
     ```
+
 
 ### The dealer selects the vehicles to export
 - **URL**: `api/export/custom-add-export-vehicles`
