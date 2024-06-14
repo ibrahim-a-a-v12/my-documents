@@ -52,3 +52,37 @@
       "success": "Your Google merchant feed has been deleted successfully."
     }
     ```
+
+### The dealer selects the vehicles to export
+- **URL**: `api/export/custom-add-export-vehicles`
+- **Method**: POST
+- **Headers**: 
+  - `Authorization`: `Bearer <token>`
+- **Request Body**:
+    ```json
+    {
+      "classifield_id" : "1095",
+      "id_vehicles" : [
+        16994,
+        16995,
+        16996
+      ]
+    }
+    ```
+- **Responses**:
+  - **200 OK**:
+    ```json
+    Response 1
+    {
+      "code": 422,
+      "errors": "The selected classifield id is invalid."
+    }
+    Response 2
+    {
+      "status": {
+        "code": 200,
+        "type": "Success",
+        "message": "Data added successfully"
+      }
+    }
+    ```
