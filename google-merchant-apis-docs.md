@@ -108,3 +108,18 @@
       ]
     }
     ```
+
+### Get Google Merchant Feed Link
+- **URL**: `api/export/google-merchant-dealer-link`
+- **Method**: GET
+- **Headers**: 
+  - `Authorization`: `Bearer <token>`
+- **Responses**:
+  - **200 OK**:
+    ```json
+    {
+      "code": 200,
+      "success": [
+      ]
+    }
+    ```
