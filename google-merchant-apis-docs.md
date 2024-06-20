@@ -118,9 +118,7 @@
   - **200 OK**:
     ```json
     {
-      "code": 200,
-      "success": [
-        ftp.v12autodealers.com/google-merchant/google-merchant-102277.csv
-      ]
+	    "code": 200,
+	    "success": "ftp.v12autodealers.com/google-merchant/google-merchant-102277.csv"
     }
     ```
