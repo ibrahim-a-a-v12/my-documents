@@ -42,7 +42,7 @@
 
 
 ### Delete google merchamt feed
-- **URL**: `api/export/get-google-merchant-classifield-setup`
+- **URL**: `api/export/delete-google-merchant-classifield`
 - **Method**: DELETE
 - **Headers**: 
   - `Authorization`: `Bearer <token>`
