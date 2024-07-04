@@ -254,7 +254,7 @@ SELECT 'account_vast', COUNT(*) FROM account_vast
 UNION ALL
 SELECT 'account_vbulletin', COUNT(*) FROM account_vbulletin
 UNION ALL
-SELECT 'account_vehix', COUNT(*) FROM account_vehix
+SELECT 'account_vehix_homenet', COUNT(*) FROM account_vehix
 UNION ALL
 SELECT 'account_vground', COUNT(*) FROM account_vground
 UNION ALL
