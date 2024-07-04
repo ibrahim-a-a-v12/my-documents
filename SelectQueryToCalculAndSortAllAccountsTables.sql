@@ -264,5 +264,5 @@ SELECT 'account_wordpress', COUNT(*) FROM account_wordpress
 UNION ALL
 SELECT 'account_xing', COUNT(*) FROM account_xing
 UNION ALL
-SELECT 'custom_feeds', COUNT(*) FROM classifields WHERE user_id <> ""
+SELECT 'custom_feeds_active', COUNT(*) FROM classifields WHERE user_id <> "" and active = 1
 ORDER BY count DESC;
