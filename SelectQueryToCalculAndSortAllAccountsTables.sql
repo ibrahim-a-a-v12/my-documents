@@ -246,6 +246,8 @@ SELECT 'account_untangler', COUNT(*) FROM account_untangler
 UNION ALL
 SELECT 'account_usedcorvettes', COUNT(*) FROM account_usedcorvettes
 UNION ALL
+SELECT 'account_usedtruckstx', COUNT(*) FROM account_usedtruckstx
+UNION ALL
 SELECT 'account_v12tov12', COUNT(*) FROM account_v12tov12
 UNION ALL
 SELECT 'account_vast', COUNT(*) FROM account_vast
