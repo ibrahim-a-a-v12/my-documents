@@ -1,4 +1,4 @@
-use v12_feeds;
+USE v12_feeds;
 SELECT 'account_7listings' AS table_name, COUNT(*) AS count FROM account_7listings
 UNION ALL
 SELECT 'account_atclassics', COUNT(*) FROM account_atclassics
