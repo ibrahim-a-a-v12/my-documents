@@ -263,4 +263,6 @@ UNION ALL
 SELECT 'account_wordpress', COUNT(*) FROM account_wordpress
 UNION ALL
 SELECT 'account_xing', COUNT(*) FROM account_xing
+UNION ALL
+SELECT 'custom_feeds', COUNT(*) FROM classifields WHERE user_id <> ""
 ORDER BY count DESC;
