@@ -264,5 +264,9 @@ SELECT 'account_wordpress', COUNT(*) FROM account_wordpress
 UNION ALL
 SELECT 'account_xing', COUNT(*) FROM account_xing
 UNION ALL
+SELECT 'account__commercialtrucktrader', COUNT(*) FROM account__commercialtrucktrader
+UNION ALL
+SELECT 'account_cycletrader', COUNT(*) FROM account_cycletrader
+UNION ALL
 SELECT 'custom_feeds_active', COUNT(*) FROM classifields WHERE user_id <> "" and active = 1
 ORDER BY count DESC;
