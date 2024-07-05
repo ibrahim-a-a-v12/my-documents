@@ -264,7 +264,7 @@ SELECT 'account_wordpress', COUNT(*) FROM account_wordpress
 UNION ALL
 SELECT 'account_xing', COUNT(*) FROM account_xing
 UNION ALL
-SELECT 'account__commercialtrucktrader', COUNT(*) FROM account__commercialtrucktrader
+SELECT 'account_commercialtrucktrader', COUNT(*) FROM account_commercialtrucktrader
 UNION ALL
 SELECT 'account_cycletrader', COUNT(*) FROM account_cycletrader
 UNION ALL
