@@ -70,8 +70,8 @@
     }
     ```
 
-### Get Google Merchant Feed Link
-- **URL**: `api/export/vehicles-listing-for-export-auctions`
+### Get vehicle listing for export auctions
+- **URL**: `api/export/vehicles-listing-for-export-auctions?page=1&paginate=15&search=`
 - **Method**: GET
 - **Headers**: 
   - `Authorization`: `Bearer <token>`
