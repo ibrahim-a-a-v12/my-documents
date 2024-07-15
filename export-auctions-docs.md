@@ -4,7 +4,7 @@
 ## Endpoints
 
 ### The dealer selects the vehicles to export
-- **URL**: `api/export/custom-add-export-vehicles`
+- **URL**: `api/export/add-exported-auctions-vehicles`
 - **Method**: POST
 - **Headers**: 
   - `Authorization`: `Bearer <token>`
@@ -47,21 +47,26 @@
     ```
 
 ### Get Vehicles selected by the dealer
-- **URL**: `api/export/custom-vehicles-exported/{classifield_id}`
+- **URL**: `api/export/exported-vehicles-for-export-auctions`
 - **Method**: GET
 - **Headers**: 
   - `Authorization`: `Bearer <token>`
+- **Request Body**:
+    ```json
+    {
+	"feed_type" : "ove"
+    }
+    ```
 - **Responses**:
   - **200 OK**:
     ```json
     {
-      "code": 200,
-      "success": [
-        31662,
-        31844,
-        31845,
-        ...
-      ]
+	"code": 200,
+	"success": [
+	   31663,
+	   31670,
+	   39359
+	]
     }
     ```
 
