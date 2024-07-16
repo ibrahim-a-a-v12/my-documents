@@ -11,31 +11,15 @@
 - **Request Body**:
     ```json
     {
-    	"feed_type" : "ove",
-    	"exported_vehicles" : [
-    		{
-    			"v_id" : 31662,
-    			"auction_type" : "Both",
-    			"start_price" : "0",
-    			"reserve_price" : "0",
-    			"bin_price" : "10000"
-    		},
-    		{
-    			"v_id" : 39358,
-    			"auction_type" : "Both",
-    			"start_price" : "0",
-    			"reserve_price" : "0",
-    			"bin_price" : "12000"
-    		},
-    		{
-    			"v_id" : 39359,
-    			"auction_type" : "Both",
-    			"start_price" : "0",
-    			"reserve_price" : "0",
-    			"bin_price" : "12000"
-    		}
-    	]
-    }
+	"feed_type" : "ove",
+	"exported_vehicles" : [
+		40017,
+		40016,
+		31666,
+		31667,
+		31663
+	]
+   }
     ```
 - **Responses**:
   - **200 OK**:
@@ -46,6 +30,30 @@
     }
     ```
 
+### Update Export Auction 
+- **URL**: `api/export/update-export-auction`
+- **Method**: POST
+- **Headers**: 
+  - `Authorization`: `Bearer <token>`
+- **Request Body**:
+    ```json
+    {
+	"v_id" 		: "31667",
+	"auction_type"  : "No Bid",
+	"start_price"   : 788,
+	"bin_price"     : 98797,
+	"reserve_price" : 98799
+    }
+    ```
+- **Responses**:
+  - **200 OK**:
+    ```json
+    {
+	"code": 200,
+	"success": "Your data has been successfully updated."
+    }
+    ```
+    
 ### Get Vehicles selected by the dealer
 - **URL**: `api/export/exported-vehicles-for-export-auctions`
 - **Method**: POST
