@@ -266,7 +266,9 @@ SELECT 'account_xing', COUNT(*) FROM account_xing
 UNION ALL
 SELECT 'account_commercialtrucktrader', COUNT(*) FROM account_commercialtrucktrader
 UNION ALL
-SELECT 'account_cycletrader', COUNT(*) FROM account_cycletrader
+SELECT 'account_cycletrader', COUNT(*) FROM account_cycletrader   	
 UNION ALL
 SELECT 'custom_feeds_active', COUNT(*) FROM classifields WHERE user_id <> "" and active = 1
+UNION ALL
+SELECT 'google_merchant_active', COUNT(*) FROM classifields WHERE google_merchant_user_id <> "" and active = 1
 ORDER BY count DESC;
