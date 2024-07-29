@@ -268,7 +268,7 @@ SELECT 'account_commercialtrucktrader', COUNT(*) FROM account_commercialtrucktra
 UNION ALL
 SELECT 'account_cycletrader', COUNT(*) FROM account_cycletrader   	
 UNION ALL
-SELECT 'account_dealer_center', COUNT(*) FROM account_cycletrader   	
+SELECT 'account_dealer_center', COUNT(*) FROM account_dealer_center   	
 UNION ALL
 SELECT 'custom_feeds_active', COUNT(*) FROM classifields WHERE user_id <> "" and active = 1
 UNION ALL
