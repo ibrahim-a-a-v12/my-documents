@@ -189,6 +189,108 @@ SELECT
 FROM 
     account_corvetteforum
 
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Craigslist' AS "TYPE", cl_username AS "EXTERNAL ID", "null" as "enabled" 
+FROM 
+    account_craigslist
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Credit_acceptance' AS "TYPE", credit_acceptance_id AS "EXTERNAL ID", enabled
+FROM 
+    account_credit_acceptance
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Cudl' AS "TYPE", cudl_id AS "EXTERNAL ID", enabled
+FROM 
+    account_cudl
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Cycletrader' AS "TYPE", cycletrader_id AS "EXTERNAL ID", enabled
+FROM 
+    account_cycletrader
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dallasautoplace' AS "TYPE", dallasautoplace_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dallasautoplace
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dbcl' AS "TYPE", dbcl_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dbcl
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dealercarsearch' AS "TYPE", dealercarsearch_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dealercarsearch
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dealerclick' AS "TYPE", dealerclick_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dealerclick
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dealerclick2' AS "TYPE", dealerclick_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dealerclick2
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dealerfire' AS "TYPE", dealerfire_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dealerfire
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dealerslink' AS "TYPE", dealerslink_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dealerslink
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dealerspeedleads' AS "TYPE", dealerspeedleads_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dealerspeedleads
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dealer_center' AS "TYPE", dealer_center_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dealer_center
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Delicious' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_delicious
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Diigo' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_diigo
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dmispecial' AS "TYPE", dmispecial_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dmispecial
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dmotorworks' AS "TYPE", dmotorworks_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dmotorworks
+
 ORDER BY 1 ASC; 
 /* 
    ORDER BY 1 means ordering by the first column in the SELECT statement.
