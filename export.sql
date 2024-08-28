@@ -291,6 +291,306 @@ SELECT
 FROM 
     account_dmotorworks
 
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Dodah' AS "TYPE", dodah_id AS "EXTERNAL ID", enabled
+FROM 
+    account_dodah
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Drivenloans' AS "TYPE", "null" AS "EXTERNAL ID", enabled
+FROM 
+    account_drivenloans
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Ebay' AS "TYPE", ebay_id AS "EXTERNAL ID", enabled
+FROM 
+    account_ebay
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Ebayclassifieds' AS "TYPE", ebayclassifieds_id AS "EXTERNAL ID", enabled
+FROM 
+    account_ebayclassifieds
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Ebizautos' AS "TYPE", ebizautos_id AS "EXTERNAL ID", enabled
+FROM 
+    account_ebizautos
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Eliteautoimports' AS "TYPE", eliteautoimports_id AS "EXTERNAL ID", enabled
+FROM 
+    account_eliteautoimports
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Facebook' AS "TYPE", oauth_uid AS "EXTERNAL ID", enabled
+FROM 
+    account_facebook
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Facebook_pages' AS "TYPE", account_facebook_id AS "EXTERNAL ID", is_enabled
+FROM 
+    account_facebook_pages
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Fidelityventures' AS "TYPE", fidelityventures_id AS "EXTERNAL ID", enabled
+FROM 
+    account_fidelityventures
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Flickr' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_flickr
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'flipboard' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_flipboard
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Fmes' AS "TYPE", fmes_id AS "EXTERNAL ID", enabled
+FROM 
+    account_fmes
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Fortynineermotors' AS "TYPE", fortynineermotors_id AS "EXTERNAL ID", enabled
+FROM 
+    account_fortynineermotors
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Freebeeauto' AS "TYPE", freebeeauto_id AS "EXTERNAL ID", enabled
+FROM 
+    account_freebeeauto
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Fusionautoplex' AS "TYPE", fusionautoplex_id AS "EXTERNAL ID", enabled
+FROM 
+    account_fusionautoplex
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Googlebusiness' AS "TYPE", blog_id AS "EXTERNAL ID", enabled
+FROM 
+    account_googlebusiness
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Googlebusinessi' AS "TYPE", blog_id AS "EXTERNAL ID", enabled
+FROM 
+    account_googlebusinessi
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Googlemybusiness_locations' AS "TYPE", place_id AS "EXTERNAL ID", is_enabled
+FROM 
+    account_googlemybusiness_locations
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Googleplus' AS "TYPE", pageid AS "EXTERNAL ID", enabled
+FROM 
+    account_googleplus
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Google_analytic' AS "TYPE", "null" AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_google_analytic
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Homenet' AS "TYPE", specialties_id AS "EXTERNAL ID", enabled
+FROM 
+    account_homenet
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Imagiclab' AS "TYPE", imagiclab_id AS "EXTERNAL ID", enabled
+FROM 
+    account_imagiclab
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Infinitypublishing' AS "TYPE", infinitypublishing_id AS "EXTERNAL ID", enabled
+FROM 
+    account_infinitypublishing
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Instagram' AS "TYPE", sendible_user_id AS "EXTERNAL ID", is_enabled
+FROM 
+    account_instagram
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Instapaper' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_instapaper
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Iocom' AS "TYPE", iocom_id AS "EXTERNAL ID", enabled
+FROM 
+    account_iocom
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Ironhorse' AS "TYPE", ironhorse_id AS "EXTERNAL ID", enabled
+FROM 
+    account_ironhorse
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Islandcarbuyer' AS "TYPE", islandcarbuyer_id AS "EXTERNAL ID", enabled
+FROM 
+    account_islandcarbuyer
+
+UNION ALL
+SELECT 
+    user_id_from as "ADD ID", 'Karklix' AS "TYPE", showroom_id AS "EXTERNAL ID", enabled
+FROM 
+    account_karklix
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Keepitlocal' AS "TYPE", keepitlocal_id AS "EXTERNAL ID", enabled
+FROM 
+    account_keepitlocal
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Kgi' AS "TYPE", kgi_id AS "EXTERNAL ID", enabled
+FROM 
+    account_kgi
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Kijiji' AS "TYPE", kijiji_id AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_kijiji
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Letgo' AS "TYPE", letgo_id AS "EXTERNAL ID", enabled
+FROM 
+    account_letgo
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Letgo_existing' AS "TYPE", letgo_id AS "EXTERNAL ID", enabled
+FROM 
+    account_letgo_existing
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Linkedin' AS "TYPE", access_token AS "EXTERNAL ID", enabled
+FROM 
+    account_linkedin
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Livejournal' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_livejournal
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Merchenta' AS "TYPE", merchenta_id AS "EXTERNAL ID", enabled
+FROM 
+    account_merchenta
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Mojo' AS "TYPE", mojo_id AS "EXTERNAL ID", enabled
+FROM 
+    account_mojo
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Mywurld' AS "TYPE", mywurld_id AS "EXTERNAL ID", enabled
+FROM 
+    account_mywurld
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Olx' AS "TYPE", olx_username AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_olx
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Openlane' AS "TYPE", openlane_id AS "EXTERNAL ID", enabled
+FROM 
+    account_openlane
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Ove' AS "TYPE", facilitated_auction_code AS "EXTERNAL ID", enabled
+FROM 
+    account_ove
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Photobucket' AS "TYPE", pb_app_id AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_photobucket
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Picasa' AS "TYPE", picasa_account_username AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_picasa
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Pinterest' AS "TYPE", pageid AS "EXTERNAL ID", enabled
+FROM 
+    account_pinterest
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Pinterest_boards' AS "TYPE", account_pinterest_id AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_pinterest_boards
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Plurk' AS "TYPE", oauth_token AS "EXTERNAL ID", enabled
+FROM 
+    account_plurk
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Prad' AS "TYPE", site_id AS "EXTERNAL ID", enabled
+FROM 
+    account_prad
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Printed_forms' AS "TYPE", form_name AS "EXTERNAL ID",  "null" as "enabled"
+FROM 
+    account_printed_forms
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Recycler' AS "TYPE", recycler_id AS "EXTERNAL ID", enabled
+FROM 
+    account_recycler
+
 ORDER BY 1 ASC; 
 /* 
    ORDER BY 1 means ordering by the first column in the SELECT statement.
