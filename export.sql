@@ -591,6 +591,234 @@ SELECT
 FROM 
     account_recycler
 
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Reddit' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_reddit
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Roncraftchevrolet' AS "TYPE", roncraftchevrolet_id AS "EXTERNAL ID", enabled
+FROM 
+    account_roncraftchevrolet
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Rvdownload' AS "TYPE", rvdownload_id AS "EXTERNAL ID", enabled
+FROM 
+    account_rvdownload
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Rvregistry' AS "TYPE", rvregistry_id AS "EXTERNAL ID", enabled
+FROM 
+    account_rvregistry
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Rvtrader' AS "TYPE", rvtrader_id AS "EXTERNAL ID", enabled
+FROM 
+    account_rvtrader
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Rvusa' AS "TYPE", rvusa_id AS "EXTERNAL ID", enabled
+FROM 
+    account_rvusa
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Smartauction' AS "TYPE", smartauction_id AS "EXTERNAL ID", enabled
+FROM 
+    account_smartauction
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Smartpillars' AS "TYPE", smartpillars_id AS "EXTERNAL ID", enabled
+FROM 
+    account_smartpillars
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Smokinvette' AS "TYPE", sv_username AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_smokinvette
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Specialties' AS "TYPE", specialties_id AS "EXTERNAL ID", enabled
+FROM 
+    account_specialties
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Speech_recognition' AS "TYPE", "null" AS "EXTERNAL ID", active
+FROM 
+    account_speech_recognition
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Stumbleupon' AS "TYPE", login AS "EXTERNAL ID", enabled
+FROM 
+    account_stumbleupon
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Sunsetmotors' AS "TYPE", sunsetmotors_id AS "EXTERNAL ID", enabled
+FROM 
+    account_sunsetmotors
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Targetmediapartners' AS "TYPE", targetmediapartners_id AS "EXTERNAL ID", enabled
+FROM 
+    account_targetmediapartners
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Tentoone' AS "TYPE", tentoone_id AS "EXTERNAL ID", enabled
+FROM 
+    account_tentoone
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Texasdrive' AS "TYPE", texasdrive_id AS "EXTERNAL ID", enabled
+FROM 
+    account_texasdrive
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Totrader' AS "TYPE", totrader_id AS "EXTERNAL ID", enabled
+FROM 
+    account_totrader
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Traderca' AS "TYPE", traderca_id AS "EXTERNAL ID", enabled
+FROM 
+    account_traderca
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Tradercaas' AS "TYPE", tradercaas_id AS "EXTERNAL ID", enabled
+FROM 
+    account_tradercaas
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Tradercasp' AS "TYPE", tradercasp_id AS "EXTERNAL ID", enabled
+FROM 
+    account_tradercasp
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Tradercatrucks' AS "TYPE", tradercatrucks_id AS "EXTERNAL ID", enabled
+FROM 
+    account_tradercatrucks
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Travidia' AS "TYPE", travidia_id AS "EXTERNAL ID", enabled
+FROM 
+    account_travidia
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Truecar' AS "TYPE", truecar_id AS "EXTERNAL ID", enabled
+FROM 
+    account_truecar
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Tumblr' AS "TYPE", access_token AS "EXTERNAL ID", enabled
+FROM 
+    account_tumblr
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Twitter' AS "TYPE", oauth_secret AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_twitter
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Untangler' AS "TYPE", untangler_id AS "EXTERNAL ID", enabled
+FROM 
+    account_untangler
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Usedcorvettes' AS "TYPE", ucfs_username AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_usedcorvettes
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Untangler' AS "TYPE", untangler_id AS "EXTERNAL ID", enabled
+FROM 
+    account_untangler
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Usedcorvettes' AS "TYPE", ucfs_username AS "EXTERNAL ID", "null" as "enabled"
+FROM 
+    account_usedcorvettes
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Usedtruckstx' AS "TYPE", usedtruckstx_id AS "EXTERNAL ID", enabled
+FROM 
+    account_usedtruckstx
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'v12tov12' AS "TYPE", v12tov12_id AS "EXTERNAL ID", enabled
+FROM 
+    account_v12tov12
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'VAST' AS "TYPE", vast_id AS "EXTERNAL ID", enabled
+FROM 
+    account_vast
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Vbulletin' AS "TYPE", vburl AS "EXTERNAL ID", enabled
+FROM 
+    account_vbulletin
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Vehix-(Homenet)' AS "TYPE", vehix_id AS "EXTERNAL ID", enabled
+FROM 
+    account_vehix
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Vground' AS "TYPE", vground_id AS "EXTERNAL ID", enabled
+FROM 
+    account_vground
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Vkontakte' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_vkontakte
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Wordpress' AS "TYPE", username AS "EXTERNAL ID", enabled
+FROM 
+    account_wordpress
+
+UNION ALL
+SELECT 
+    user_id as "ADD ID", 'Xing' AS "TYPE", access_token AS "EXTERNAL ID", enabled
+FROM 
+    account_xing
+
 ORDER BY 1 ASC; 
 /* 
    ORDER BY 1 means ordering by the first column in the SELECT statement.
