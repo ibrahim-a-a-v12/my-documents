@@ -819,6 +819,13 @@ SELECT
 FROM 
     account_xing
 
+UNION ALL
+SELECT 
+    user_id as "ADD ID", CONCAT("Custom - ", " ", name) AS "TYPE", "null" AS "EXTERNAL ID", active
+FROM 
+    classifields
+WHERE user_id <> ""
+    
 ORDER BY 1 ASC; 
 /* 
    ORDER BY 1 means ordering by the first column in the SELECT statement.
