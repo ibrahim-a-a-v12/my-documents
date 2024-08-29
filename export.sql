@@ -825,6 +825,13 @@ SELECT
 FROM 
     classifields
 WHERE user_id <> ""
+
+UNION ALL
+SELECT 
+    google_merchant_user_id as "ADD ID", name AS "TYPE", "null" AS "EXTERNAL ID", active
+FROM 
+    classifields
+WHERE google_merchant_user_id <> ""
     
 ORDER BY 1 ASC; 
 /* 
