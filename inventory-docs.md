@@ -2,11 +2,14 @@
 
 ## Import part :
 
-   import_accounts table :
-    - enabled                     = 0 / 1;
-    - import_source_id     = Many and depends on the cases ;
-    - last_update               = Date;
-    - period                         = hours (We use this to we can run import automaticly every day or every two days ...);
-    - headers_mapping     = mapping;
-    - customize_mapping = if it = 1 use headers_mapping | if it = 0 use provider mapping;
-    - process                       = 0 / 1;
+### `import_accounts` Table
+
+- **enabled**: `0 / 1`
+- **import_source_id**: Many (depends on the cases)
+- **last_update**: Date
+- **period**: Hours (used for automatic imports every day or every two days)
+- **headers_mapping**: Mapping
+- **customize_mapping**: 
+  - `1`: Use `headers_mapping`
+  - `0`: Use provider mapping
+- **process**: `0 / 1`                     = 0 / 1;
