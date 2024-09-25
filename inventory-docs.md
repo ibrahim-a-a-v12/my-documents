@@ -12,4 +12,4 @@
 - **customize_mapping**: 
   - `1`: Use `headers_mapping`
   - `0`: Use provider mapping
-- **process**: `0 / 1`                     = 0 / 1;
+- **process**: `0 / 1` 
