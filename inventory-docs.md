@@ -7,7 +7,7 @@
 - **enabled**: `0 / 1`
 - **import_source_id**: Many (depends on the cases)
 - **last_update**: Date
-- **period**: Hours (used for automatic imports every day or every two days)
+- **period**: Hours (used for automatic imports every day or every two days...)
 - **headers_mapping**: Mapping
 - **customize_mapping**: 
   - `1`: Use `headers_mapping`
