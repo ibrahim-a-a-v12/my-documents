@@ -215,7 +215,7 @@ class UpdateOrCreateClassifieldSeeder extends Seeder
         
         // SELECT scheduled_time ,COUNT(*) FROM `classifields` GROUP by scheduled_time;
         
-        $classifields = Classifield::whereNotIn();
+        $classifields = Classifield::all();
         $index = 0;
         foreach($classifields as $classifield) {
             if($index > count($times) - 1) {
