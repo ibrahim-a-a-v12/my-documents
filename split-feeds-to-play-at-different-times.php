@@ -213,6 +213,8 @@ class UpdateOrCreateClassifieldSeeder extends Seeder
             '16:00',
         ];
         
+        # SELECT scheduled_time ,COUNT(*) FROM `classifields` GROUP by scheduled_time;
+        
         $index = 0;
         Classifield::select('id', 'scheduled_time')
             ->chunk(500, function($classifields) use (&$index, $times) {
