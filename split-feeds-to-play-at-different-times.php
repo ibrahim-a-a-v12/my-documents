@@ -2,6 +2,7 @@
 
 namespace Database\seeds;
 
+use App\Helpers\UtilHelper;
 use App\Models\Classifield;
 use App\Models\CustomFeedTemplate;
 use Illuminate\Database\Seeder;
@@ -213,10 +214,9 @@ class UpdateOrCreateClassifieldSeeder extends Seeder
             '16:00',
         ];
         
-        # SELECT scheduled_time ,COUNT(*) FROM `classifields` GROUP by scheduled_time;
-        
         $index = 0;
         Classifield::select('id', 'scheduled_time')
+            ->where('id', '>=', 1000)
             ->chunk(500, function($classifields) use (&$index, $times) {
                 foreach ($classifields as $classifield) {
                     if ($index >= count($times)) {
@@ -224,6 +224,17 @@ class UpdateOrCreateClassifieldSeeder extends Seeder
                     }
             
                     $classifield->scheduled_time = $times[$index];
+                    $classifield->update(); 
+            
+                    $index++; 
+                }
+            });
+
+        Classifield::select('id', 'scheduled_time')
+            ->where('id', '<', 1000)
+            ->chunk(500, function($classifields) use (&$index, $times) {
+                foreach ($classifields as $classifield) {            
+                    $classifield->scheduled_time = UtilHelper::getRandomTimeBetweenTwoHours(00, 7);
                     $classifield->update(); 
             
                     $index++; 
