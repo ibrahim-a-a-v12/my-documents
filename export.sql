@@ -837,4 +837,3 @@ ORDER BY 1 ASC;
 /* 
    ORDER BY 1 means ordering by the first column in the SELECT statement.
 */
-
